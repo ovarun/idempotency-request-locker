@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Ovarun\IdempotencyRequestLocker\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class IdempotencyRequestLockerCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'idempotency-request-locker';
 
     public $description = 'My command';
 

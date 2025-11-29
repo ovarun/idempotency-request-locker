@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "ovarun/idempotency-request-locker",
+    "description": "Idempotency middleware for Laravel to prevent duplicate API actions using request signatures and distributed locks. Ensures safe retries for payments, webhooks, and critical actions.",
     "keywords": [
-        ":vendor_name",
+        "Arun o v",
         "laravel",
-        ":package_slug"
+        "idempotency-request-locker"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/ovarun/idempotency-request-locker",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Arun o v",
+            "email": "arunov8545@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Ovarun\\IdempotencyRequestLocker\\": "src/",
+            "Ovarun\\IdempotencyRequestLocker\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Ovarun\\IdempotencyRequestLocker\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Ovarun\\IdempotencyRequestLocker\\IdempotencyRequestLockerServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "IdempotencyRequestLocker": "Ovarun\\IdempotencyRequestLocker\\Facades\\IdempotencyRequestLocker"
             }
         }
     },
